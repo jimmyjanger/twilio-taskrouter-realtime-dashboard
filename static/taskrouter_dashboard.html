@@ -23,11 +23,11 @@
             <div id="taskrouterDashboard" v-cloak>
               <div class="ui clearing segment v-cloak--hidden">
                 <h4 class="ui left floated header">
-                  <img src="/images/twilio-logo.png" class="ui middle aligned image">
+                  <img src="/images/taskrouter-logo.png" class="ui middle aligned image">
                   {{eventType}}
                 </h4>
                 <h3 class="ui right floated header">
-                  <img src="/images/Wrisk-Logo (3).png" class="ui middle aligned image">
+                  <img src="/images/twilio-mark-red.png" class="ui middle aligned image">
                   {{headerMessage}}
                 </h3>
               </div>
@@ -46,25 +46,25 @@
                 </div>
                 <div class="eight wide center aligned column">
                     <div class="ui mini black statistic segment">
-                      <div class="ui top attached label">Calls</div>
+                      <div class="ui top attached label">Tasks</div>
                       <div class="value">
                         {{currentTaskStatus['pending']}}
                       </div>
                       <div class="label">
-                        Waiting
+                        Created
                       </div>
                     </div>
                     <div class="ui mini yellow statistic segment">
-                      <div class="ui top attached label">Calls</div>
+                      <div class="ui top attached label">Tasks</div>
                       <div class="value">
                         {{currentTaskStatus['reserved']}}
                       </div>
                       <div class="label">
-                        Assigned
+                        Reserved
                       </div>
                     </div>
                     <div class="ui mini green statistic segment">
-                      <div class="ui top attached label">Calls</div>
+                      <div class="ui top attached label">Tasks</div>
                       <div class="value">
                         {{currentTaskStatus['assigned']}}
                       </div>
@@ -73,21 +73,21 @@
                       </div>
                     </div>
                     <div class="ui mini blue statistic segment">
-                        <div class="ui top attached label">Calls</div>
-                        <div class="value">
-                            {{currentTaskStatus['completed']}}
-                        </div>
-                        <div class='lable">
-                          Completed
+                      <div class="ui top attached label">Tasks</div>
+                      <div class="value">
+                        {{currentTaskStatus['completed']}}
+                      </div>
+                      <div class="label">
+                        Completed
                       </div>
                     </div>
                     <div class="ui mini red statistic segment">
-                      <div class="ui top attached label">Calls</div>
+                      <div class="ui top attached label">Tasks</div>
                       <div class="value">
                         {{currentTaskStatus['canceled']}}
                       </div>
                       <div class="label">
-                        Dropped
+                        Canceled
                       </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                         {{currentTaskStatus['assigned']}}
                       </div>
                       <div class="label">
-                        On Calls
+                        Reserved
                       </div>
                     </div>
                     <div class="ui mini red statistic segment">
@@ -130,7 +130,7 @@
                     <th class="center aligned">Team</th>
                     <th class="center aligned">Agent</th>
                     <th class="center aligned">Priority</th>
-                    <th class="center aligned">Call Status</th>
+                    <th class="center aligned">Task Status</th>
                     <th class="center aligned">Recording</th>
                   </tr>
                 </thead>
