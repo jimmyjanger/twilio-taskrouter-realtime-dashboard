@@ -145,7 +145,7 @@ var taskrouterDashboard = new Vue({
         }
         this.avgTaskAcceptanceTime = data['avgTaskAcceptanceTime'];
         console.log(this.avgTaskAcceptanceTime )
-        if (this.avgTaskAcceptanceTime  > 120) {
+        if (this.avgTaskAcceptanceTime  > 20) {
           this.missedSLA = true;
           this.withinSLA = false;
         } else {
